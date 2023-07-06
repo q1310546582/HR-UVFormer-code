@@ -1,0 +1,15 @@
+torch==1.12.0
+tensorboard==2.12.0
+GDAL==3.4.3
+tqdm==4.64.1
+einops==0.6.0
+numpy~=1.23.5
+timm~=0.6.12
+einops~=0.6.0
+pillow~=9.3.0
+torchvision~=0.13.0
+matplotlib~=3.1.2
+scipy~=1.9.1
+pandas~=1.5.3
+opencv-python~=4.7.0.72
+tqdm~=4.64.1

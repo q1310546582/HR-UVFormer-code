@@ -1,0 +1,33 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="20">
+            <item index="0" class="java.lang.String" itemvalue="scipy" />
+            <item index="1" class="java.lang.String" itemvalue="DSwinSegformer" />
+            <item index="2" class="java.lang.String" itemvalue="h5py" />
+            <item index="3" class="java.lang.String" itemvalue="2000" />
+            <item index="4" class="java.lang.String" itemvalue="torch" />
+            <item index="5" class="java.lang.String" itemvalue="numpy" />
+            <item index="6" class="java.lang.String" itemvalue="torchvision" />
+            <item index="7" class="java.lang.String" itemvalue="Segformer" />
+            <item index="8" class="java.lang.String" itemvalue="tqdm" />
+            <item index="9" class="java.lang.String" itemvalue="0" />
+            <item index="10" class="java.lang.String" itemvalue="b3" />
+            <item index="11" class="java.lang.String" itemvalue="cls_to_seg" />
+            <item index="12" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="13" class="java.lang.String" itemvalue="opencv_python" />
+            <item index="14" class="java.lang.String" itemvalue="Pillow" />
+            <item index="15" class="java.lang.String" itemvalue="Segformer_UV_ClsToSegmentation_DenseHouse" />
+            <item index="16" class="java.lang.String" itemvalue="DenseHouse_v2" />
+            <item index="17" class="java.lang.String" itemvalue="VOCdevkit" />
+            <item index="18" class="java.lang.String" itemvalue="visdom" />
+            <item index="19" class="java.lang.String" itemvalue="dominate" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
