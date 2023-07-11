@@ -2,20 +2,22 @@
 ---
 
 ### Catalog
-1. [Introduction](#仓库更新)
-2. [File Directory](#相关仓库)
-3. [ Performance](#性能情况)
-4. [Necessary Environments](#所需环境)
-5. [Download](#文件下载)
-6. [How2train](#训练步骤)
-7. [How2evaluate](#预测步骤)
-8. [How2predict](#评估步骤)
+1. [Introduction](#Introduction)
+2. [File Directory](#File Directory)
+3. [Performance](#Performance)
+4. [Necessary Environments](#Necessary Environments)
+5. [Download](#Download link)
+6. [How2Train](#How2Train)
+7. [How2Evaluate](#How2Evaluate)
+8. [How2Predict](#How2Predict)
 
 
+<a id="Introduction"></a> 
 ## Introduction
 **`2023-07`**:**HR-UVFormer, a top-down and multimodal hierarchical extraction framework, which performs top-down extraction of urban villages (UVs) from coarse scale (patches) to fine granularity (pixels). The framework integrates the strengths of multi-scale extraction and can fuse multimodal features, including building footprints (BF) and POI, aiming to enhance the internal completeness and boundary accuracy of the extraction results.**  
 
-## File Directory
+<a id="File Directory"></a> 
+### File Directory
 | Filename   | Brief |
 |:-----------| :----- |
  train.py       | The model training and evaluation startup file, and configuration about the model  
@@ -28,6 +30,7 @@
  **utils/utils_fit.py** | Functions to be called when training an Epoch 
  utils/utils_metrics.py | exist in the files to calculate metrics such as OA mIOU
 
+<a id="Performance"></a> 
 ### Performance
 |      Model      |    Training data    |   Extraction Strategy    |   OA   |  mIOU  | Params |
 |:---------------:|:-------------------:|:------------------------:|:------:|:------:|:------:| 
@@ -38,6 +41,7 @@
 | SlWinSegformer  |  Sample-level RSI   | Hierarchical extraction  | 96.01% | 92.95% | 61.45M |
 |   HR-UVFormer   | Sample-level RSI+BF | Hierarchical extraction  | 98.79% | 93.60% | 91.19M |
 
+<a id="Necessary Environments"></a> 
 ### Necessary Environments
 torch==1.12.0   
 tensorboard==2.12.0     
@@ -55,15 +59,14 @@ pandas~=1.5.3
 opencv-python~=4.7.0.72     
 tqdm~=4.64.1    
 
-
+<a id="Download link"></a> 
 ### Download link
-Pre-trained model weights files     
-Link: https://pan.baidu.com/s/1tH4wdGnACtIuGOoXb0_rAw     
+Pre-trained model weights files and Dataset:     
+Link: https://doi.org/10.57760/sciencedb.09424
 
-Dataset：   
-Link: https://pan.baidu.com/s/1vkk3lMheUm6IjTXznlg7Ng     
 
-### How2train
+<a id="How2train"></a> 
+## How2Train
 #### Segformer 
 1. Place the downloaded dataset *DenseHouse_v2* in the VOCdevkit directory
 2. Place the downloaded weights *segformer_b3_backbone_weights.pth* in the model_data directory
@@ -206,8 +209,8 @@ cls_to_seg
 VOCdevkit/DenseHouse_v2/ImageSets/name_classes_segmentation.txt
 ```
   
-
-### How2evaluate
+<a id="How2Evaluate"></a> 
+## How2Evaluate
 #### Segformer
 1. Place the downloaded dataset *DenseHouse_v2* in the *VOCdevkit* directory
 2. Place the trained *Segfromer* .pth file in the *outputs* directory
@@ -369,8 +372,8 @@ RS
 ```
 
 
-### How2predict
-
+## How2predict
+<a id="How2Predict"></a> 
 #### HR-UVFormer/SlWinSegformer / MLP-Mixer / SwinTransforemr
 1. Place the downloaded dataset *DenseHouse_v1* in the *VOCdevkit* directory
 2. Place the trained *HR_UVFormer* .pth file in the *outputs* directory
