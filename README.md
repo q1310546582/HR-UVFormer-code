@@ -3,10 +3,10 @@
 
 ### Catalog
 1. [Introduction](#Introduction)
-2. [File Directory](#File Directory)
+2. [File Directory](#FileDirectory)
 3. [Performance](#Performance)
-4. [Necessary Environments](#Necessary Environments)
-5. [Download](#Download link)
+4. [Necessary Environments](#NecessaryEnvironments)
+5. [Download](#DownloadLink)
 6. [How2Train](#How2Train)
 7. [How2Evaluate](#How2Evaluate)
 8. [How2Predict](#How2Predict)
@@ -16,7 +16,7 @@
 ## Introduction
 **`2023-07`**:**HR-UVFormer, a top-down and multimodal hierarchical extraction framework, which performs top-down extraction of urban villages (UVs) from coarse scale (patches) to fine granularity (pixels). The framework integrates the strengths of multi-scale extraction and can fuse multimodal features, including building footprints (BF) and POI, aiming to enhance the internal completeness and boundary accuracy of the extraction results.**  
 
-<a id="File Directory"></a> 
+<a id="FileDirectory"></a> 
 ### File Directory
 | Filename   | Brief |
 |:-----------| :----- |
@@ -41,7 +41,7 @@
 | SlWinSegformer  |  Sample-level RSI   | Hierarchical extraction  | 96.01% | 92.95% | 61.45M |
 |   HR-UVFormer   | Sample-level RSI+BF | Hierarchical extraction  | 98.79% | 93.60% | 91.19M |
 
-<a id="Necessary Environments"></a> 
+<a id="NecessaryEnvironments"></a> 
 ### Necessary Environments
 torch==1.12.0   
 tensorboard==2.12.0     
@@ -59,7 +59,7 @@ pandas~=1.5.3
 opencv-python~=4.7.0.72     
 tqdm~=4.64.1    
 
-<a id="Download link"></a> 
+<a id="DownloadLink"></a> 
 ### Download link
 Pre-trained model weights files and Dataset:     
 Link: https://doi.org/10.57760/sciencedb.09424
